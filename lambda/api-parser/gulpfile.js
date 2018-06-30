@@ -15,7 +15,7 @@ gulp.task('build', ['clean'], () => {
         .js.pipe(gulp.dest('dist/'));
 });
 
-gulp.task('jest', function () {
+gulp.task('test', ['clean'], () => {
     process.env.NODE_ENV = 'test';
 
     return gulp.src('tests').pipe(jest());
