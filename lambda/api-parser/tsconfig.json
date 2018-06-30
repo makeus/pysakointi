@@ -1,0 +1,17 @@
+{
+  "files": [
+    "./src/*.ts"
+  ],
+  "include": ["*/*.ts"],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5",
+    "lib": [ "es2015" ],
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "../../node_modules/@types"
+    ]
+  }
+}
