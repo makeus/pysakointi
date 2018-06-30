@@ -1,0 +1,285 @@
+{
+  "help": "https://www.avoindata.fi/data/fi/api/3/action/help_show?name=datastore_search",
+  "success": true,
+  "result": {
+    "include_total": true,
+    "resource_id": "fe9a8570-d75d-4b84-9508-943bd5e5cdfe",
+    "fields": [
+      {
+        "type": "int",
+        "id": "_id"
+      },
+      {
+        "type": "text",
+        "id": "Virheen tekokuukausi"
+      },
+      {
+        "type": "numeric",
+        "id": "Virheen tekovuosi"
+      },
+      {
+        "type": "text",
+        "id": "Osoite"
+      },
+      {
+        "type": "text",
+        "id": "Virhemaksun vaihe"
+      },
+      {
+        "type": "text",
+        "id": "Virheen  p\u00e4\u00e4luokka / p\u00e4\u00e4syy"
+      },
+      {
+        "type": "text",
+        "id": "Virheen kirjaaja"
+      },
+      {
+        "type": "text",
+        "id": "y"
+      },
+      {
+        "type": "text",
+        "id": "x"
+      },
+      {
+        "type": "numeric",
+        "id": "Postinumero"
+      },
+      {
+        "type": "text",
+        "id": "Postitoimipaikka"
+      },
+      {
+        "type": "text",
+        "id": "Alue"
+      },
+      {
+        "type": "text",
+        "id": "Kunta"
+      },
+      {
+        "type": "text",
+        "id": "Kunta_nro"
+      }
+    ],
+    "records_format": "objects",
+    "records": [
+      {
+        "_id": 122,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänkuja 1",
+        "Virhemaksun vaihe": "Huomautus",
+        "Virheen  pääluokka / pääsyy": "1501 Pysäköinti jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 123,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänkuja 2",
+        "Virhemaksun vaihe": "Huomautus",
+        "Virheen  pääluokka / pääsyy": "1500 Pysäköinti/Pysäyttäminen jalkakäytävälle/pyörätielle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 124,
+        "Virheen tekokuukausi": "Helmikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänpolku 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "1506 Pysäyttäminen yhdistetylle jalkakäytävä/pyörätielle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 125,
+        "Virheen tekokuukausi": "Maaliskuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänsilta 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "2713 pysäköinti kuorma-autoille varatulle paikalle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 126,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänsilta 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "0400 Pysäköintikieltoalue liikennemerkin noudattamatta jättäminen 2200 Pysäköinti merkityn pysäköintipaikan viereen ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 127,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänsilta 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "2713 pysäköinti kuorma-autoille varatulle paikalle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 128,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänsilta 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "2713 pysäköinti kuorma-autoille varatulle paikalle 2200 Pysäköinti merkityn pysäköintipaikan viereen ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 129,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijänsilta 0",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "2713 pysäköinti kuorma-autoille varatulle paikalle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 130,
+        "Virheen tekokuukausi": "Maaliskuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijäntie 2",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "1501 Pysäköinti jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 131,
+        "Virheen tekokuukausi": "Maaliskuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijäntie 2",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "1501 Pysäköinti jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 132,
+        "Virheen tekokuukausi": "Maaliskuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijäntie 2",
+        "Virhemaksun vaihe": "Huomautus",
+        "Virheen  pääluokka / pääsyy": "1504 Pysäyttäminen jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 133,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijäntie 2",
+        "Virhemaksun vaihe": "Pysäköintivirhe",
+        "Virheen  pääluokka / pääsyy": "1504 Pysäyttäminen jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      },
+      {
+        "_id": 134,
+        "Virheen tekokuukausi": "Tammikuu",
+        "Virheen tekovuosi": 2018,
+        "Osoite": "Aarteenetsijäntie 4",
+        "Virhemaksun vaihe": "Huomautus",
+        "Virheen  pääluokka / pääsyy": "0401 Pysäköintikieltoalue liikennemerkin noudattamatta jättäminen 1504 Pysäyttäminen jalkakäytävälle ",
+        "Virheen kirjaaja": "Pysäköinnintarkastaja",
+        "y": "",
+        "x": "",
+        "Postinumero": null,
+        "Postitoimipaikka": "",
+        "Alue": "",
+        "Kunta": "",
+        "Kunta_nro": ""
+      }
+    ],
+    "limit": 13,
+    "offset": 123,
+    "_links": {
+      "start": "/api/3/action/datastore_search?resource_id=fe9a8570-d75d-4b84-9508-943bd5e5cdfe&limit=13",
+      "prev": "/api/3/action/datastore_search?resource_id=fe9a8570-d75d-4b84-9508-943bd5e5cdfe&limit=13&offset=110",
+      "next": "/api/3/action/datastore_search?resource_id=fe9a8570-d75d-4b84-9508-943bd5e5cdfe&limit=13&offset=136"
+    },
+    "total": 37051
+  }
+}

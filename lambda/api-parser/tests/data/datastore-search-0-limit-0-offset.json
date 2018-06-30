@@ -1,0 +1,75 @@
+{
+  "help": "https://www.avoindata.fi/data/fi/api/3/action/help_show?name=datastore_search",
+  "success": true,
+  "result": {
+    "include_total": true,
+    "resource_id": "fe9a8570-d75d-4b84-9508-943bd5e5cdfe",
+    "fields": [
+      {
+        "type": "int",
+        "id": "_id"
+      },
+      {
+        "type": "text",
+        "id": "Virheen tekokuukausi"
+      },
+      {
+        "type": "numeric",
+        "id": "Virheen tekovuosi"
+      },
+      {
+        "type": "text",
+        "id": "Osoite"
+      },
+      {
+        "type": "text",
+        "id": "Virhemaksun vaihe"
+      },
+      {
+        "type": "text",
+        "id": "Virheen  p\u00e4\u00e4luokka / p\u00e4\u00e4syy"
+      },
+      {
+        "type": "text",
+        "id": "Virheen kirjaaja"
+      },
+      {
+        "type": "text",
+        "id": "y"
+      },
+      {
+        "type": "text",
+        "id": "x"
+      },
+      {
+        "type": "numeric",
+        "id": "Postinumero"
+      },
+      {
+        "type": "text",
+        "id": "Postitoimipaikka"
+      },
+      {
+        "type": "text",
+        "id": "Alue"
+      },
+      {
+        "type": "text",
+        "id": "Kunta"
+      },
+      {
+        "type": "text",
+        "id": "Kunta_nro"
+      }
+    ],
+    "records_format": "objects",
+    "records": [],
+    "limit": 0,
+    "offset": 0,
+    "_links": {
+      "start": "/api/3/action/datastore_search?resource_id=fe9a8570-d75d-4b84-9508-943bd5e5cdfe&limit=0",
+      "next": "/api/3/action/datastore_search?resource_id=fe9a8570-d75d-4b84-9508-943bd5e5cdfe&limit=0&offset=0"
+    },
+    "total": 37051
+  }
+}

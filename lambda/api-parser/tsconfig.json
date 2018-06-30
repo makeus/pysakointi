@@ -2,13 +2,14 @@
   "files": [
     "./src/*.ts"
   ],
-  "include": ["*/*.ts"],
+  "include": ["**/*.ts"],
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es5",
     "lib": [ "es2015" ],
     "types": [
-      "node"
+      "node",
+      "jest"
     ],
     "typeRoots": [
       "../../node_modules/@types"
