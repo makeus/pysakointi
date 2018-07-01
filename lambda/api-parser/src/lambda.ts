@@ -8,7 +8,7 @@ import Runner from './runner';
 declare type lambdaCallback = (error?: Error, message?: {}) => void
 
 exports.handler = async (event: {}, context: {}, callback: lambdaCallback) => {
-    
+
     let resourceId = process.env.RESOURCE_ID;
     let sqsQueueUrl = process.env.QUEUE_URL;
 

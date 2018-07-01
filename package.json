@@ -1,11 +1,6 @@
 {
   "name": "pysakointi",
   "version": "0.0.1",
-  "main": "index.js",
   "author": "<mathias@phz.fi>",
-  "license": "MIT",
-  "private": true,
-  "workspaces": [
-    "lambda/*"
-  ]
+  "private": true
 }
