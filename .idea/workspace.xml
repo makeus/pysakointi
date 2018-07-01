@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c4b2eb-c405-41ae-874a-56410c5b5bcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/api-parser/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/api-parser/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/api-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/api-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/api-parser/src/lambda.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/api-parser/src/lambda.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/api-parser/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/api-parser/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/api-parser/tests/src/retriever.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/api-parser/tests/src/runner.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/api-parser/tests/src/sqs-poster.test.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -257,6 +252,21 @@
               <item name="api-parser" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pysakointi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pysakointi" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda" type="462c0819:PsiDirectoryNode" />
+              <item name="api-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pysakointi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pysakointi" type="462c0819:PsiDirectoryNode" />
+              <item name="lambda" type="462c0819:PsiDirectoryNode" />
+              <item name="api-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -303,16 +313,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530353849665</updated>
-      <workItem from="1530353851990" duration="39491000" />
+      <workItem from="1530353851990" duration="39663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39491000" />
+    <option name="totallyTimeSpent" value="39663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
@@ -356,13 +365,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/lambda/api-parser/tests/src/sqs-poster.test.js" />
-        <option value="$PROJECT_DIR$/lambda/api-parser/tests/src/retriever.test.js" />
-        <option value="$PROJECT_DIR$/lambda/api-parser/tests/src/runner.test.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -618,7 +620,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
