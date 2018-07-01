@@ -22,10 +22,8 @@ interface ErrorResponse {
 }
 
 export class Retriever {
-    _initPromise: Promise<Response>;
-
+    private readonly resourceId: string;
     totalItems: number;
-    resourceId: string;
 
     /**
      * @param {number} limit
@@ -42,23 +40,23 @@ export class Retriever {
      */
     constructor(resourceId: string) {
         this.resourceId = resourceId;
-        this._initPromise = this._get(0, 0)
-            .then((response: Response): Response => {
-                this.totalItems = response.body.result.total;
-                return response;
-            });
     }
 
 
     /**
-     * 
+     * @returns {Promise<number>}
+     */
+    async getTotal(): Promise<number> {
+        return (await this._get(0, 0)).body.result.total;
+    }
+
+    /**
+     *
      * @param {number} offset
      * @param {number} limit
      * @returns {Promise<Record[]>}
      */
     async getRecords(offset: number, limit: number): Promise<Record[]> {
-        await this._initPromise;
-
         let response = await this._get(limit, offset);
 
         return response.body.result.records;

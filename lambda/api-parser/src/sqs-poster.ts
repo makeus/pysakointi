@@ -1,13 +1,13 @@
-import SQS = require("aws-sdk/clients/sqs");
-import {Record} from "./record";
+import SQS = require('aws-sdk/clients/sqs');
+import {Record} from './record';
 
 const _ = require('lodash');
 const promisify = require('util').promisify;
 
 export class SqsPoster {
 
-    sqs: SQS;
-    queueUrl: string;
+    private sqs: SQS;
+    private readonly queueUrl: string;
 
     constructor(queueUrl: string, sqs: SQS) {
         this.queueUrl = queueUrl;
