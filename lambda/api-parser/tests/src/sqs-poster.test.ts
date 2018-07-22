@@ -18,6 +18,11 @@ describe('SqsPoster', () => {
 
             expect(spy).toHaveBeenCalled();
             expect(spy.mock.calls.length).toEqual(Math.ceil(records.length / 10));
+            expect(spy.mock.calls[0][0].Entries[0].Id).toStrictEqual('1');
+            expect(spy.mock.calls[0][0].Entries[1].Id).toStrictEqual('2');
+            expect(spy.mock.calls[0][0].Entries[0].MessageGroupId).toStrictEqual('1');
+            expect(spy.mock.calls[1][0].Entries[0].Id).toStrictEqual('1');
+            expect(spy.mock.calls[1][0].Entries[0].MessageGroupId).toStrictEqual('2');
         });
 
     });

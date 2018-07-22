@@ -1,0 +1,107 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Pysakointi - Api parsing lambda and SQS queue
+Parameters:
+
+  ResourceId:
+    Description: Resource from the avoindata.fi
+    Type: String
+    Default: fe9a8570-d75d-4b84-9508-943bd5e5cdfe
+
+  LambdaScriptBucket:
+    Description: Aws s3 bucket where lamda code zips are
+    Type: String
+    AllowedPattern: ^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$
+
+  LambdaApiParserFileName:
+    Description: Filename of the code for the api-parser lambda
+    Type: String
+    AllowedPattern: ^[a-zA-Z0-9-]*\.zip$
+    ConstraintDescription: Zip file
+    
+Resources:
+  SqsQueue:
+    Type: AWS::SQS::Queue
+    Properties: {}
+  LambdaExecutionRole:
+      Type: AWS::IAM::Role
+      Properties:
+        AssumeRolePolicyDocument:
+          Version: 2012-10-17
+          Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+              - lambda.amazonaws.com
+            Action:
+            - sts:AssumeRole
+        Path: /
+        RoleName: lambda-execution-code
+        Policies:
+        - PolicyName: root
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+            - Effect: Allow
+              Action:
+              - logs:*
+              Resource: arn:aws:logs:*:*:*
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Path: /
+
+  LambdaSqsSendMessagePolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: sqsSendMessage
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Action:
+              - sqs:SendMessage
+              - sqs:SendMessageBatch
+            Resource: !GetAtt SqsQueue.Arn
+          -
+            Effect: Allow
+            Action:
+              - logs:CreateLogGroup
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+            Resource: '*'
+      Roles:
+          - !Ref LambdaExecutionRole
+
+  LambdaApiParserFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: lambda.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Code:
+        S3Bucket: !Ref LambdaScriptBucket
+        S3Key: !Ref LambdaApiParserFileName
+      Runtime: nodejs8.10
+      Timeout: 300
+      FunctionName: pysakointi-api-parser
+      Handler: lambda.handler
+      Environment:
+        Variables:
+          RESOURCE_ID: !Ref ResourceId
+          QUEUE_URL: !Ref SqsQueue
+
+Outputs:
+  QueueURL:
+    Description: URL of the newly created SQS Queue
+    Value: !Ref SqsQueue
+

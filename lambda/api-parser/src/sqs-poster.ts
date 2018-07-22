@@ -2,7 +2,7 @@ import SQS = require('aws-sdk/clients/sqs');
 import {Record} from './record';
 
 const _ = require('lodash');
-const promisify = require('util').promisify;
+const Q = require('q');
 
 export class SqsPoster {
 
@@ -19,16 +19,16 @@ export class SqsPoster {
             let params = {
                 Entries: records.map((record: Record, index: number) => {
                     return {
-                        Id: index,
+                        Id: (++index).toString(),
                         MessageBody: JSON.stringify(record),
                         DelaySeconds: 0,
-                        MessageGroupId: chunkIndex
+                        MessageGroupId: (++chunkIndex).toString()
                     };
                 }),
                 QueueUrl: this.queueUrl
             };
 
-            return promisify(this.sqs.sendMessageBatch)(params);
+            return Q.ninvoke(this.sqs, 'sendMessageBatch', params);
         }));
     }
 }
